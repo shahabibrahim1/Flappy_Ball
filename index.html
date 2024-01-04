@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>FLAPPY BALL</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=VT323&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <!-- Main Page -->
+    <div class="main-div">
+      <h1 class="mainh1">Flappy Ball</h1>
+      <hr>
+      <br>
+      <div class="btn-div">
+        <p class="mode-p">Change the Difficulty for more of a Challenge</p>
+        <button id="hard" class="mode-btn">Hard</button>
+        <button id="extreme" class="mode-btn">Extreme</button>
+      </div>
+      
+      <div class="color-div">
+        <p class="mode-p">Colors: </p>
+        <p><hr class="color-hr"></p>
+        <p class="ballcolor">Ball Color: </p>
+        <input id="colorpicker" type="color">
+        <br>  
+        <br>
+        <hr class="color-hr">
+        <button id="darkmode">Dark Mode</button>
+      </div>
+
+      <!-- Flappy ball Canvas -->
+      <br>
+      <canvas id="flappyCanvas"></canvas>
+    
+      <!-- After flappy death -->
+      <div id="flappyhide" class="hide">
+        <div id="flappydeath" class="deathdiv">
+          <h1>Game Over</h1>
+            <div class="score">
+              <p class="scorekeeper">Score: <br> <span id="score"> 0 </span></p>
+              <p>Want to Play Again? <br> Press RESTART</p>
+            </div>
+            <button class="flappyrestart" onclick="location.reload()">RESTART</button>
+        </div>
+      </div>  
+
+    <!-- Flappy Script -->
+      <script src="flappy.js"></script>
+    </div>
+  </body>
+</html>
+
